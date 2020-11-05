@@ -2,7 +2,7 @@
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
 Module Name: Az.Storage
 ms.assetid: 3CFA6E31-E243-4B22-AE8F-1942DD324639
-online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/new-azstoragetablesastoken
+online version: https://docs.microsoft.com/powershell/module/az.storage/new-azstoragetablesastoken
 schema: 2.0.0
 ---
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -222,7 +222,7 @@ The acceptable values for this parameter are:
 The default value is HttpsOrHttp.
 
 ```yaml
-Type: System.Nullable`1[Microsoft.WindowsAz.Storage.SharedAccessProtocol]
+Type: System.Nullable`1[Microsoft.Azure.Cosmos.Table.SharedAccessProtocol]
 Parameter Sets: (All)
 Aliases:
 Accepted values: HttpsOnly, HttpsOrHttp

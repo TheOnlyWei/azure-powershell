@@ -2,7 +2,7 @@
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
 Module Name: Az.Storage
 ms.assetid: 4631D36F-926A-4279-AA4D-5F694C18081E
-online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/get-azstoragetable
+online version: https://docs.microsoft.com/powershell/module/az.storage/get-azstoragetable
 schema: 2.0.0
 ---
 
@@ -15,8 +15,8 @@ Lists the storage tables.
 
 ### TableName (Default)
 ```
-Get-AzStorageTable [[-Name] <String>] [-Context <IStorageContext>]
- [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+Get-AzStorageTable [[-Name] <String>] [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ### TablePrefix
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 

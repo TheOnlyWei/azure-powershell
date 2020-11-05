@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '0.10.0'
+ModuleVersion = '2.0.1'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -53,19 +53,19 @@ DotNetFrameworkVersion = '4.7.2'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.0.0'; },
-               @{ModuleName = 'Az.Billing'; RequiredVersion = '0.10.0'; }, 
-               @{ModuleName = 'Az.Compute'; RequiredVersion = '0.10.0'; }, 
-               @{ModuleName = 'Az.DataBoxEdge'; RequiredVersion = '1.1.0'; }, 
-               @{ModuleName = 'Az.Dns'; RequiredVersion = '0.10.0'; }, 
+RequiredModules = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.2.8'; },
+               @{ModuleName = 'Az.Billing'; RequiredVersion = '0.11.0'; }, 
+               @{ModuleName = 'Az.Compute'; RequiredVersion = '3.3.0'; }, 
+               @{ModuleName = 'Az.DataBoxEdge'; RequiredVersion = '1.1.0'; }
+               @{ModuleName = 'Az.Dns'; RequiredVersion = '0.11.0'; }, 
                @{ModuleName = 'Az.EventHub'; RequiredVersion = '1.4.3'; }, 
-               @{ModuleName = 'Az.IotHub'; RequiredVersion = '0.10.0'; }, 
-               @{ModuleName = 'Az.KeyVault'; RequiredVersion = '0.10.0'; }, 
+               @{ModuleName = 'Az.IotHub'; RequiredVersion = '0.11.0'; }, 
+               @{ModuleName = 'Az.KeyVault'; RequiredVersion = '0.11.0'; }, 
                @{ModuleName = 'Az.Monitor'; RequiredVersion = '1.6.0'; }, 
-               @{ModuleName = 'Az.Network'; RequiredVersion = '0.10.0'; }, 
-               @{ModuleName = 'Az.Resources'; RequiredVersion = '0.10.0'; }, 
-               @{ModuleName = 'Az.Storage'; RequiredVersion = '0.10.0'; }, 
-               @{ModuleName = 'Az.Websites'; RequiredVersion = '0.10.0'; })
+               @{ModuleName = 'Az.Network'; RequiredVersion = '1.2.2'; }, 
+               @{ModuleName = 'Az.Resources'; RequiredVersion = '0.12.0'; }, 
+               @{ModuleName = 'Az.Storage'; RequiredVersion = '2.6.2'; }, 
+               @{ModuleName = 'Az.Websites'; RequiredVersion = '0.11.0'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -121,12 +121,10 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '0.10.0 - March 2020
-* Support Azure Stack 2019-03-01 hybrid profile
-        '
+        ReleaseNotes = '* Support Azure Stack 2020-09-01 hybrid profile'
 
         # Prerelease string of this module
-        Prerelease = 'preview'
+        # Prerelease = 'preview'
 
         # Flag to indicate whether the module requires explicit user acceptance for install/update/save
         # RequireLicenseAcceptance = $false

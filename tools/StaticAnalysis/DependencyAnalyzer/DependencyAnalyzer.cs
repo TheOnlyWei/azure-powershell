@@ -166,6 +166,7 @@ namespace StaticAnalysis.DependencyAnalyzer
             "System.Configuration",
             "System.Net.WebClient",
             "System.Memory",
+            "System.Memory.Data",
             "System.Text.Encoding.CodePages",
             "System.Private.Xml",
             "System.Reflection.DispatchProxy",
@@ -181,7 +182,8 @@ namespace StaticAnalysis.DependencyAnalyzer
             "System.Security.AccessControl",
             "System.Security.Principal.Windows",
             "System.Data.SqlClient",
-            "System.Security.Cryptography.ProtectedData"
+            "System.Security.Cryptography.ProtectedData",
+            "System.Text.Json"
         };
 
         private readonly Dictionary<string, AssemblyRecord> _assemblies =
@@ -384,7 +386,7 @@ namespace StaticAnalysis.DependencyAnalyzer
             foreach (var file in Directory.GetFiles(directoryPath).Where(file => file.EndsWith(".dll")))
             {
                 var assembly = CreateAssemblyRecord(file);
-                if (!IsFrameworkAssembly(assembly.Name))
+                if (assembly?.Name != null && !IsFrameworkAssembly(assembly.Name))
                 {
                     _assemblies[assembly.Name] = assembly;
                     AddSharedAssembly(assembly);

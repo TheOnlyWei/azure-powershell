@@ -19,6 +19,13 @@
 -->
 ## Upcoming Release
 
+## Version 0.12.0
+* Set `-IdentifierUris` as alias of `-IdentifierUri` in `New-AzADApplication` and changed it as optional parameter
+* Removed default DisplayName of ADServicePrincipal when it is not specified
+
+## Version 0.11.0
+* Release for Azure Stack 2020-09-01-hybrid profile
+
 ## Version 0.10.0-preview
 * Release for Azure Stack 2019-03-01-hybrid profile
 

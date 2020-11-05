@@ -2,7 +2,7 @@
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
 Module Name: Az.Storage
 ms.assetid: C2EBCCF0-56CE-4D49-A138-74E52FC3A9AC
-online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/get-azstoragequeue
+online version: https://docs.microsoft.com/powershell/module/az.storage/get-azstoragequeue
 schema: 2.0.0
 ---
 
@@ -15,8 +15,8 @@ Lists storage queues.
 
 ### QueueName (Default)
 ```
-Get-AzStorageQueue [[-Name] <String>] [-Context <IStorageContext>]
- [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+Get-AzStorageQueue [[-Name] <String>] [-Context <IStorageContext>] [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ### QueuePrefix
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 

@@ -2,7 +2,7 @@
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
 Module Name: Az.Storage
 ms.assetid: BDEEF1EA-A785-4E17-9887-C2000BDFCF57
-online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/set-azstoragecontaineracl
+online version: https://docs.microsoft.com/powershell/module/az.storage/set-azstoragecontaineracl
 schema: 2.0.0
 ---
 
@@ -48,7 +48,7 @@ If this cmdlet does not receive a successful response before the interval elapse
 ```yaml
 Type: System.Nullable`1[System.Int32]
 Parameter Sets: (All)
-Aliases:
+Aliases: ClientTimeoutPerRequestInSeconds
 
 Required: False
 Position: Named
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -154,7 +154,7 @@ Clients cannot enumerate blobs in the container by using anonymous request.
 Restricts access to only the storage account owner.
 
 ```yaml
-Type: Microsoft.WindowsAz.Storage.Blob.BlobContainerPublicAccessType
+Type: Microsoft.Azure.Storage.Blob.BlobContainerPublicAccessType
 Parameter Sets: (All)
 Aliases: PublicAccess
 Accepted values: Off, Container, Blob, Unknown
@@ -174,7 +174,7 @@ Server side time out for each request.
 ```yaml
 Type: System.Nullable`1[System.Int32]
 Parameter Sets: (All)
-Aliases:
+Aliases: ServerTimeoutPerRequestInSeconds
 
 Required: False
 Position: Named

@@ -2,7 +2,7 @@
 external help file: Microsoft.Azure.PowerShell.Cmdlets.Storage.dll-Help.xml
 Module Name: Az.Storage
 ms.assetid: 5422429E-C609-4C1F-A021-E2A085B5F74E
-online version: https://docs.microsoft.com/en-us/powershell/module/az.storage/set-azstorageserviceloggingproperty
+online version: https://docs.microsoft.com/powershell/module/az.storage/set-azstorageserviceloggingproperty
 schema: 2.0.0
 ---
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core.IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -77,7 +77,7 @@ The acceptable values for this parameter are:
 - All
 
 ```yaml
-Type: Microsoft.WindowsAz.Storage.Shared.Protocol.LoggingOperations[]
+Type: Microsoft.Azure.Storage.Shared.Protocol.LoggingOperations[]
 Parameter Sets: (All)
 Aliases:
 Accepted values: None, Read, Write, Delete, All
@@ -168,7 +168,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.WindowsAz.Storage.Shared.Protocol.LoggingProperties
+### Microsoft.Azure.Storage.Shared.Protocol.LoggingProperties
 
 ## NOTES
 
