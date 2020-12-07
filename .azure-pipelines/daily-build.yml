@@ -87,13 +87,6 @@ jobs:
       custom: msbuild
       arguments: 'build.proj /t:Build /p:Configuration=Release'
 
-  - task: DotNetCoreCLI@2
-    displayName: Publish
-    inputs:
-      command: custom
-      custom: msbuild
-      arguments: 'build.proj /t:Publish /p:Configuration=Release;NuGetKey=$(NuGetKey)'
-
   - task: PublishPipelineArtifact@0
     displayName: 'Save artifacts'
     inputs:
