@@ -39,18 +39,31 @@ if ($UsePreviousConfigForRecord) {
 # example: $val = $env.AddWithCache('key', $val, $true)
 $env | Add-Member -Type ScriptMethod -Value { param( [string]$key, [object]$val, [bool]$useCache) if ($this.Contains($key) -and $useCache) { return $this[$key] } else { $this[$key] = $val; return $val } } -Name 'AddWithCache'
 function setupEnv() {
-    # Preload subscriptionId and tenant from context, which will be used in test
-    # as default. You could change them if needed.
-    # For any resources you created for test, you should add it to $env here.
-    $env = Get-Content -Path (Join-Path $PSScriptRoot "envVariables.json") | ConvertFrom-Json
-    
-    $envFile = 'env.json'
-    if ($TestMode -eq 'live') {
-        $envFile = 'localEnv.json'
+    # Load environment JSON file.
+    $loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+    if (-Not (Test-Path -Path $loadEnvPath)) {
+        $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
     }
-    set-content -Path (Join-Path $PSScriptRoot $envFile) -Value (ConvertTo-Json $env)
+    . ($loadEnvPath)
+    # Create a provisioned cluster to be used by all tests if it doesn't already exist.
+    $cluster = Get-AzAksArcCluster `
+        -ClusterName $env.clusterName `
+        -ResourceGroupName $env.resourceGroupName
+    if ($null -eq $cluster) {
+        $path = Join-Path -Path $PSScriptRoot -ChildPath "test-rsa"
+        ssh-keygen -t rsa -b 4096 -f $path -C "" -N ""
+        $ssh = Get-Content -Path "${path}.pub"
+        New-AzAksArcCluster `
+            -ClusterName $env.clusterName`
+            -ResourceGroupName $env.resourceGroupName  `
+            -CustomLocationName $env.customLocationName `
+            -VnetId $env.lnetID `
+            -SshKeyValue $ssh
+    }
 }
 function cleanupEnv() {
-    # Clean resources you create for testing
+    # Please clean up your test resources manually. 
+    # This is so we can use the same provisioned cluster every time we run test-module.ps1 and to prevent having to 
+    # recreate the provisioned cluster for every test-module.ps1 call.
 }
 

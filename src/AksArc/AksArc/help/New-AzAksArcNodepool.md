@@ -17,15 +17,14 @@ Create the agent pool in the provisioned cluster
 New-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <String>
  [-SubscriptionId <String>] [-Count <Int32>] [-EnableAutoScaling] [-MinCount <Int32>] [-MaxCount <Int32>]
  [-MaxPod <Int32>] [-NodeLabel <Hashtable>] [-NodeTaint <String[]>] [-OSSku <String>] [-OSType <String>]
- [-Tag <Hashtable>] [-VMSize <String>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Tag <Hashtable>] [-VMSize <String>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <String>
- [-SubscriptionId <String>] -InputObject <IAksArcIdentity> [-AsJob] [-NoWait]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -InputObject <IAksArcIdentity> [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AutoScaling
@@ -38,15 +37,13 @@ New-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <St
 ### CreateViaJsonFilePath
 ```
 New-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <String>
- [-SubscriptionId <String>] -JsonFilePath <String> [-AsJob] [-NoWait]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonFilePath <String> [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaJsonString
 ```
 New-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <String>
- [-SubscriptionId <String>] -JsonString <String> [-AsJob] [-NoWait]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonString <String> [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

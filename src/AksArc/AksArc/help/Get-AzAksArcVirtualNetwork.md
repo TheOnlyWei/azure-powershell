@@ -14,8 +14,7 @@ Lists the virtual networks in the specified resource group
 
 ### List1 (Default)
 ```
-Get-AzAksArcVirtualNetwork [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+Get-AzAksArcVirtualNetwork [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### Retrieve
@@ -32,8 +31,7 @@ Get-AzAksArcVirtualNetwork -ResourceGroupName <String> [-SubscriptionId <String[
 
 ### RetrieveViaIdentity
 ```
-Get-AzAksArcVirtualNetwork -InputObject <IAksArcIdentity> [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+Get-AzAksArcVirtualNetwork -InputObject <IAksArcIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

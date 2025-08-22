@@ -1,0 +1,94 @@
+{
+  "Get-AzAksArcVMSku+[NoContext]+Get+$GET+https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/skus/default?api-version=2024-01-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/skus/default?api-version=2024-01-01",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "c29931fd-af79-4e3e-930c-14b880ebeffd" ],
+        "CommandName": [ "Az.AksArc.internal\\Get-AzAksArcVMSku" ],
+        "FullCommandName": [ "Get-AzAksArcVMSku_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.24", "Az.AksArc/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "ETag": [ "\"c00062e2-0000-1a00-0000-68a6ae900000\"" ],
+        "x-ms-operation-identifier": [ "tenantId=d9b73d5e-a9d3-41ba-88c3-796a643e3edd,objectId=2717d02a-6a0e-4f54-b968-8543e7eb3a3a/westus2/7fb786a0-8fac-4a9a-ac26-e50dd6fe4b27" ],
+        "x-ms-providerhub-traffic": [ "True" ],
+        "x-ms-request-id": [ "3705d4c4-72c7-4fcc-9cf4-006073d2af83" ],
+        "x-ms-correlation-request-id": [ "983a84c1-2cff-4c33-a88e-bfdaade93a2f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20250821T053717Z:983a84c1-2cff-4c33-a88e-bfdaade93a2f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 6F7E6C7FB774471293E4A8E20A97DF0A Ref B: CO6AA3150219033 Ref C: 2025-08-21T05:37:17Z" ],
+        "Date": [ "Thu, 21 Aug 2025 05:37:17 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "3488" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/edgeci-registration-hc1n25r0210-niyuqk2a/providers/microsoft.extendedlocation/customlocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/skus/default\",\"name\":\"default\",\"type\":\"microsoft.hybridcontainerservice/skus\",\"systemData\":{\"createdBy\":\"319f651f-7ddb-4fc6-9857-7aef9250bd05\",\"createdByType\":\"Application\",\"createdAt\":\"2025-08-20T15:43:01.2933277Z\",\"lastModifiedBy\":\"319f651f-7ddb-4fc6-9857-7aef9250bd05\",\"lastModifiedByType\":\"Application\",\"lastModifiedAt\":\"2025-08-21T05:28:48.5842717Z\"},\"properties\":{\"provisioningState\":\"Succeeded\",\"values\":[{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"8\"},{\"name\":\"MemoryGB\",\"value\":\"16\"}],\"name\":\"Standard_NC8_A16\",\"size\":\"NC8\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"16\"}],\"name\":\"Standard_D4s_v3\",\"size\":\"D4s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"16\"},{\"name\":\"MemoryGB\",\"value\":\"64\"}],\"name\":\"Standard_NC16_A16\",\"size\":\"NC16\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"32\"},{\"name\":\"MemoryGB\",\"value\":\"128\"}],\"name\":\"Standard_NC32_A2\",\"size\":\"NC32\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"2\"},{\"name\":\"MemoryGB\",\"value\":\"4\"}],\"name\":\"Standard_A2_v2\",\"size\":\"A2\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"16\"},{\"name\":\"MemoryGB\",\"value\":\"64\"}],\"name\":\"Standard_NC16_A2\",\"size\":\"NC16\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"8\"}],\"name\":\"Standard_NC4_A16\",\"size\":\"NC4\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"16\"},{\"name\":\"MemoryGB\",\"value\":\"64\"}],\"name\":\"Standard_D16s_v3\",\"size\":\"D16s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"32\"},{\"name\":\"MemoryGB\",\"value\":\"128\"}],\"name\":\"Standard_D32s_v3\",\"size\":\"D32s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"8\"},{\"name\":\"MemoryGB\",\"value\":\"32\"}],\"name\":\"Standard_D8s_v3\",\"size\":\"D8s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"6\"}],\"name\":\"Standard_K8S3_v1\",\"size\":\"K8S3\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"8\"}],\"name\":\"Standard_NC4_A2\",\"size\":\"NC4\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"8\"},{\"name\":\"MemoryGB\",\"value\":\"16\"}],\"name\":\"Standard_NC8_A2\",\"size\":\"NC8\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"12\"},{\"name\":\"MemoryGB\",\"value\":\"24\"}],\"name\":\"Standard_NK12\",\"size\":\"NK12\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"6\"},{\"name\":\"MemoryGB\",\"value\":\"12\"}],\"name\":\"Standard_NK6\",\"size\":\"NK6\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"8\"}],\"name\":\"Standard_A4_v2\",\"size\":\"A4\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"32\"},{\"name\":\"MemoryGB\",\"value\":\"128\"}],\"name\":\"Standard_NC32_A16\",\"size\":\"NC32\",\"tier\":\"GPU\"}]}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzAksArcVMSku+[NoContext]+Get+$GET+https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/skus/default?api-version=2024-01-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/skus/default?api-version=2024-01-01",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "587a277d-7530-404a-80b4-99fb5728cb39" ],
+        "CommandName": [ "Az.AksArc.internal\\Get-AzAksArcVMSku" ],
+        "FullCommandName": [ "Get-AzAksArcVMSku_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.24", "Az.AksArc/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "ETag": [ "\"c00062e2-0000-1a00-0000-68a6ae900000\"" ],
+        "x-ms-operation-identifier": [ "tenantId=d9b73d5e-a9d3-41ba-88c3-796a643e3edd,objectId=2717d02a-6a0e-4f54-b968-8543e7eb3a3a/australiaeast/9b92ebaa-c0be-42b2-8e40-49e52a653e81" ],
+        "x-ms-providerhub-traffic": [ "True" ],
+        "x-ms-request-id": [ "637b34e4-2806-45f8-90e7-0353a178fad7" ],
+        "x-ms-correlation-request-id": [ "48c47e7e-3f8a-4998-91c9-925edbfbdfd6" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-routing-request-id": [ "AUSTRALIAEAST:20250821T053718Z:48c47e7e-3f8a-4998-91c9-925edbfbdfd6" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 8F872B295E304E95981CDE34BE61A0A1 Ref B: CO6AA3150219033 Ref C: 2025-08-21T05:37:17Z" ],
+        "Date": [ "Thu, 21 Aug 2025 05:37:17 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "3488" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/edgeci-registration-hc1n25r0210-niyuqk2a/providers/microsoft.extendedlocation/customlocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/skus/default\",\"name\":\"default\",\"type\":\"microsoft.hybridcontainerservice/skus\",\"systemData\":{\"createdBy\":\"319f651f-7ddb-4fc6-9857-7aef9250bd05\",\"createdByType\":\"Application\",\"createdAt\":\"2025-08-20T15:43:01.2933277Z\",\"lastModifiedBy\":\"319f651f-7ddb-4fc6-9857-7aef9250bd05\",\"lastModifiedByType\":\"Application\",\"lastModifiedAt\":\"2025-08-21T05:28:48.5842717Z\"},\"properties\":{\"provisioningState\":\"Succeeded\",\"values\":[{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"8\"},{\"name\":\"MemoryGB\",\"value\":\"16\"}],\"name\":\"Standard_NC8_A16\",\"size\":\"NC8\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"16\"}],\"name\":\"Standard_D4s_v3\",\"size\":\"D4s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"16\"},{\"name\":\"MemoryGB\",\"value\":\"64\"}],\"name\":\"Standard_NC16_A16\",\"size\":\"NC16\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"32\"},{\"name\":\"MemoryGB\",\"value\":\"128\"}],\"name\":\"Standard_NC32_A2\",\"size\":\"NC32\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"2\"},{\"name\":\"MemoryGB\",\"value\":\"4\"}],\"name\":\"Standard_A2_v2\",\"size\":\"A2\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"16\"},{\"name\":\"MemoryGB\",\"value\":\"64\"}],\"name\":\"Standard_NC16_A2\",\"size\":\"NC16\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"8\"}],\"name\":\"Standard_NC4_A16\",\"size\":\"NC4\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"16\"},{\"name\":\"MemoryGB\",\"value\":\"64\"}],\"name\":\"Standard_D16s_v3\",\"size\":\"D16s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"32\"},{\"name\":\"MemoryGB\",\"value\":\"128\"}],\"name\":\"Standard_D32s_v3\",\"size\":\"D32s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"8\"},{\"name\":\"MemoryGB\",\"value\":\"32\"}],\"name\":\"Standard_D8s_v3\",\"size\":\"D8s\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"6\"}],\"name\":\"Standard_K8S3_v1\",\"size\":\"K8S3\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"8\"}],\"name\":\"Standard_NC4_A2\",\"size\":\"NC4\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"8\"},{\"name\":\"MemoryGB\",\"value\":\"16\"}],\"name\":\"Standard_NC8_A2\",\"size\":\"NC8\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"12\"},{\"name\":\"MemoryGB\",\"value\":\"24\"}],\"name\":\"Standard_NK12\",\"size\":\"NK12\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"6\"},{\"name\":\"MemoryGB\",\"value\":\"12\"}],\"name\":\"Standard_NK6\",\"size\":\"NK6\",\"tier\":\"GPU\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"4\"},{\"name\":\"MemoryGB\",\"value\":\"8\"}],\"name\":\"Standard_A4_v2\",\"size\":\"A4\",\"tier\":\"Standard\"},{\"resourceType\":\"virtualMachines\",\"capabilities\":[{\"name\":\"vCpu\",\"value\":\"32\"},{\"name\":\"MemoryGB\",\"value\":\"128\"}],\"name\":\"Standard_NC32_A16\",\"size\":\"NC32\",\"tier\":\"GPU\"}]}}",
+      "isContentBase64": false
+    }
+  }
+}

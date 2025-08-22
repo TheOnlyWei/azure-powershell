@@ -21,8 +21,7 @@ Invoke-AzAksArcClusterUpgrade -ClusterName <String> -ResourceGroupName <String> 
 ### Upgrade
 ```
 Invoke-AzAksArcClusterUpgrade -ClusterName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- -KubernetesVersion <String> [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -KubernetesVersion <String> [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

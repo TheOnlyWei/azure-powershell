@@ -1,0 +1,94 @@
+{
+  "Get-AzAksArcKubernetesVersion+[NoContext]+List+$GET+https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/kubernetesVersions/default?api-version=2024-01-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/kubernetesVersions/default?api-version=2024-01-01",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "4bf36663-15a3-44df-8a14-ba28d1199765" ],
+        "CommandName": [ "Az.AksArc.internal\\Get-AzAksArcKubernetesVersion" ],
+        "FullCommandName": [ "Get-AzAksArcKubernetesVersion_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.24", "Az.AksArc/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "ETag": [ "\"eb0118be-0000-1a00-0000-68a6aa800000\"" ],
+        "x-ms-operation-identifier": [ "tenantId=d9b73d5e-a9d3-41ba-88c3-796a643e3edd,objectId=2717d02a-6a0e-4f54-b968-8543e7eb3a3a/westus2/a0034682-2a85-45e2-997f-068a829a936b" ],
+        "x-ms-providerhub-traffic": [ "True" ],
+        "x-ms-request-id": [ "6ab7ec29-a496-4847-807a-618907e4ae57" ],
+        "x-ms-correlation-request-id": [ "b3d70ee0-6e31-4680-b837-c04252e1c9ee" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-routing-request-id": [ "WESTUS2:20250821T051135Z:b3d70ee0-6e31-4680-b837-c04252e1c9ee" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 1C7B7F0C4ABA47C2ADD343475AB8A984 Ref B: CO6AA3150219011 Ref C: 2025-08-21T05:11:35Z" ],
+        "Date": [ "Thu, 21 Aug 2025 05:11:35 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2390" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/microsoft.extendedlocation/customlocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/kubernetesVersions/default\",\"name\":\"default\",\"type\":\"microsoft.hybridcontainerservice/kubernetesversions\",\"extendedLocation\":{\"name\":\"/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourcegroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/microsoft.extendedlocation/customlocations/s-cluster-customlocation\",\"type\":\"CustomLocation\"},\"systemData\":{\"createdBy\":\"af1c6d67-5a2a-49d8-ab92-5dc4a97051d6\",\"createdByType\":\"Application\",\"createdAt\":\"2025-08-20T15:44:23.9787846Z\",\"lastModifiedBy\":\"319f651f-7ddb-4fc6-9857-7aef9250bd05\",\"lastModifiedByType\":\"Application\",\"lastModifiedAt\":\"2025-08-21T05:11:28.3471339Z\"},\"properties\":{\"provisioningState\":\"Succeeded\",\"values\":[{\"version\":\"1.30\",\"isPreview\":false,\"patchVersions\":{\"1.30.9\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.31.4\",\"1.31.5\"]},\"1.30.8\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.30.9\",\"1.31.4\",\"1.31.5\"]}}},{\"version\":\"1.31\",\"isPreview\":false,\"patchVersions\":{\"1.31.4\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.31.5\"]},\"1.31.5\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}]}}},{\"version\":\"1.29\",\"isPreview\":false,\"patchVersions\":{\"1.29.12\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.29.13\",\"1.30.8\",\"1.30.9\"]},\"1.29.13\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.30.8\",\"1.30.9\"]}}}]}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzAksArcKubernetesVersion+[NoContext]+List+$GET+https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/kubernetesVersions/default?api-version=2024-01-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com//subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/kubernetesVersions/default?api-version=2024-01-01",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "2ab76729-f60a-4719-bbc0-4495ad7bd8b0" ],
+        "CommandName": [ "Az.AksArc.internal\\Get-AzAksArcKubernetesVersion" ],
+        "FullCommandName": [ "Get-AzAksArcKubernetesVersion_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/v0.0.0", "PSVersion/v7.2.24", "Az.AksArc/0.1.0" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "ETag": [ "\"eb0118be-0000-1a00-0000-68a6aa800000\"" ],
+        "x-ms-operation-identifier": [ "tenantId=d9b73d5e-a9d3-41ba-88c3-796a643e3edd,objectId=2717d02a-6a0e-4f54-b968-8543e7eb3a3a/australiaeast/f9afaef4-4c1b-45d9-956b-eaa7dad5b7ad" ],
+        "x-ms-providerhub-traffic": [ "True" ],
+        "x-ms-request-id": [ "9c2b5ef4-33f4-4e00-a481-c365c17498e8" ],
+        "x-ms-correlation-request-id": [ "b3652f06-ee96-4f49-b6b7-6e0a49f07b5f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "249" ],
+        "x-ms-ratelimit-remaining-subscription-global-reads": [ "3749" ],
+        "x-ms-routing-request-id": [ "AUSTRALIAEAST:20250821T051136Z:b3652f06-ee96-4f49-b6b7-6e0a49f07b5f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "X-Cache": [ "CONFIG_NOCACHE" ],
+        "X-MSEdge-Ref": [ "Ref A: 101A899EFD86400B97A23315279959DB Ref B: CO6AA3150219011 Ref C: 2025-08-21T05:11:36Z" ],
+        "Date": [ "Thu, 21 Aug 2025 05:11:36 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2390" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/microsoft.extendedlocation/customlocations/s-cluster-customlocation/providers/Microsoft.HybridContainerService/kubernetesVersions/default\",\"name\":\"default\",\"type\":\"microsoft.hybridcontainerservice/kubernetesversions\",\"extendedLocation\":{\"name\":\"/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourcegroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/microsoft.extendedlocation/customlocations/s-cluster-customlocation\",\"type\":\"CustomLocation\"},\"systemData\":{\"createdBy\":\"af1c6d67-5a2a-49d8-ab92-5dc4a97051d6\",\"createdByType\":\"Application\",\"createdAt\":\"2025-08-20T15:44:23.9787846Z\",\"lastModifiedBy\":\"319f651f-7ddb-4fc6-9857-7aef9250bd05\",\"lastModifiedByType\":\"Application\",\"lastModifiedAt\":\"2025-08-21T05:11:28.3471339Z\"},\"properties\":{\"provisioningState\":\"Succeeded\",\"values\":[{\"version\":\"1.30\",\"isPreview\":false,\"patchVersions\":{\"1.30.9\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.31.4\",\"1.31.5\"]},\"1.30.8\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.30.9\",\"1.31.4\",\"1.31.5\"]}}},{\"version\":\"1.31\",\"isPreview\":false,\"patchVersions\":{\"1.31.4\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.31.5\"]},\"1.31.5\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}]}}},{\"version\":\"1.29\",\"isPreview\":false,\"patchVersions\":{\"1.29.12\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.29.13\",\"1.30.8\",\"1.30.9\"]},\"1.29.13\":{\"readiness\":[{\"osType\":\"Linux\",\"osSku\":\"CBLMariner\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2019\",\"ready\":true},{\"osType\":\"Windows\",\"osSku\":\"Windows2022\",\"ready\":true}],\"upgrades\":[\"1.30.8\",\"1.30.9\"]}}}]}}",
+      "isContentBase64": false
+    }
+  }
+}

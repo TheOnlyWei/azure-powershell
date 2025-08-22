@@ -16,16 +16,15 @@ Update the agent pool in the provisioned cluster
 ```
 Update-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <String>
  [-SubscriptionId <String>] [-Count <Int32>] [-NodeLabel <Hashtable>] [-NodeTaint <String[]>]
- [-VMSize <String>] [-Tag <Hashtable>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-VMSize <String>] [-Tag <Hashtable>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 Update-AzAksArcNodepool -ClusterName <String> -ResourceGroupName <String> -Name <String>
  [-SubscriptionId <String>] -InputObject <IAksArcIdentity> [-Count <Int32>] [-NodeLabel <Hashtable>]
- [-NodeTaint <String[]>] [-VMSize <String>] [-Tag <Hashtable>] [-AsJob] [-NoWait]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NodeTaint <String[]>] [-VMSize <String>] [-Tag <Hashtable>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### AutoScaling

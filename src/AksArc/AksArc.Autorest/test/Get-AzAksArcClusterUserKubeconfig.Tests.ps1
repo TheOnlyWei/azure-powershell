@@ -15,7 +15,15 @@ if(($null -eq $TestName) -or ($TestName -contains 'Get-AzAksArcClusterUserKubeco
 }
 
 Describe 'Get-AzAksArcClusterUserKubeconfig' {
-    It 'List' -skip {
-        { throw [System.NotImplementedException] } | Should -Not -Throw
+    It 'Get' {
+        # WARNING: Please redact sensitive data in the recording file before committing. You can do this by replacing
+        # the kubeconfig JSON response value with any value, converted to base64, required to make the test pass. The
+        # current value is "dGVzdC1jbHVzdGVy" which is base64 for "test-cluster".
+        # WARNING: Please do not record tests using production or long-running resources.
+        $config = Get-AzAksArcClusterUserKubeconfig `
+            -ClusterName $env.clusterName `
+            -ResourceGroupName $env.resourceGroupName
+        $config | Should -Not -BeNullOrEmpty
+        $config -like "*$($env.clusterName )*" | Should -BeTrue
     }
 }

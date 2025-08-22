@@ -15,7 +15,13 @@ if(($null -eq $TestName) -or ($TestName -contains 'Get-AzAksArcLog'))
 }
 
 Describe 'Get-AzAksArcLog' {
-    It 'Get' -skip {
-        { throw [System.NotImplementedException] } | Should -Not -Throw
+    It 'Get' {
+        $log = Get-AzAksArcLog -IpAddress "<IP of a node in the provisioned cluster>" `
+            -SSHKeyPath "<SSH key to connect to the node>"
+            -OutDir "<output directory to store logs>" 
+        $log | Out-String
+        $log | Should -Not -BeNullOrEmpty
+        $log.ProvisioningState | Should -be "Succeeded"
+        $log.Type | Should -be  "microsoft.hybridcontainerservice/logs"
     }
 }

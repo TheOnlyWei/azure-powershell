@@ -41,8 +41,8 @@ Update-AzAksArcCluster -ClusterName <String> -ResourceGroupName <String> [-Subsc
  [-AutoScalerProfileScaleDownDelayAfterFailure <String>] [-AutoScalerProfileScaleDownUnneededTime <String>]
  [-AutoScalerProfileScaleDownUnreadyTime <String>] [-AutoScalerProfileScaleDownUtilizationThreshold <String>]
  [-AutoScalerProfileScanInterval <String>] [-AutoScalerProfileSkipNodesWithLocalStorage <String>]
- [-AutoScalerProfileSkipNodesWithSystemPod <String>] [-EnableAutoScaling] [-AsJob] [-NoWait]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AutoScalerProfileSkipNodesWithSystemPod <String>] [-EnableAutoScaling] [-AsJob] [-NoWait] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

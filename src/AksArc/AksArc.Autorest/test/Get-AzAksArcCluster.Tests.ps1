@@ -15,7 +15,11 @@ if(($null -eq $TestName) -or ($TestName -contains 'Get-AzAksArcCluster'))
 }
 
 Describe 'Get-AzAksArcCluster' {
-    It 'Get' -skip {
-        { throw [System.NotImplementedException] } | Should -Not -Throw
+    It 'Get' {
+        {
+            $cluster = Get-AzAksArcCluster -ClusterName "test-cluster" -ResourceGroupName $env.ResourceGroupName
+            $cluster | Should -Not -BeNullOrEmpty
+            $cluster.Type | Should -be "microsoft.hybridcontainerservice/provisionedclusterinstances"
+        }
     }
 }

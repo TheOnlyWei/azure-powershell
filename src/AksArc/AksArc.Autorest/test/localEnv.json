@@ -1,10 +1,13 @@
 {
-  "SubscriptionId": "0709bd7a-8383-4e1d-98c8-f81d1b3443fc",
-  "Tenant": "72f988bf-86f1-41af-91ab-2d7cd011db47", 
-  "customLocationId1": "/subscriptions/0709bd7a-8383-4e1d-98c8-f81d1b3443fc/resourceGroups/ProvisionedCluster-PR/providers/Microsoft.ExtendedLocation/customLocations/pipeline-appl-0620-1-9459-96444497-dev-hybridaks-cl", 
-  "lnetId1": "/subscriptions/0709bd7a-8383-4e1d-98c8-f81d1b3443fc/resourceGroups/ProvisionedCluster-PR/providers/Microsoft.AzureStackHCI/logicalnetworks/lnet1arulvelm",
-  "controlPlaneIP1": "172.16.0.3", 
-  "clusterName1": "powershellcluster117", 
-  "ResourceGroupName1": "ProvisionedCluster-PR",
-  "NodepoolName1": "psnp"
+  "SubscriptionID": "304d8fdf-1c02-4907-9c3a-ddbd677199cd",
+  "Tenant": "d9b73d5e-a9d3-41ba-88c3-796a643e3edd",
+  "customLocationID": "/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.ExtendedLocation/customLocations/s-cluster-customlocation",
+  "customLocationName": "s-cluster-customlocation",
+  "lnetID": "/subscriptions/304d8fdf-1c02-4907-9c3a-ddbd677199cd/resourceGroups/EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A/providers/Microsoft.AzureStackHCI/logicalNetworks/test-lnet",
+  "controlPlaneIP": "192.168.200.110",
+  "clusterName": "test-cluster",
+  "ResourceGroupName": "EDGECI-REGISTRATION-HC1n25r0210-nIYuQK2A",
+  "NodepoolName": "test-nodepool",
+  "location": "australiaeast",
+  "mocVnetName": "vnet-arcbridge"
 }

@@ -15,7 +15,11 @@ if(($null -eq $TestName) -or ($TestName -contains 'Get-AzAksArcVMSku'))
 }
 
 Describe 'Get-AzAksArcVMSku' {
-    It 'Get' -skip {
-        { throw [System.NotImplementedException] } | Should -Not -Throw
+    It 'Get' {
+        $vmSkus = Get-AzAksArcVMSku -CustomLocationName $env.customLocationName `
+            -ResourceGroupName $env.resourceGroupName
+        $vmSkus | Should -Not -BeNullOrEmpty
+        $vmSkus.ProvisioningState | Should -be "Succeeded"
+        $vmSkus.Type | Should -be  "microsoft.hybridcontainerservice/skus"
     }
 }

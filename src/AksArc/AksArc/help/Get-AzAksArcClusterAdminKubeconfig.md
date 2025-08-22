@@ -14,8 +14,7 @@ Lists the admin credentials of the provisioned cluster (can only be used within 
 
 ```
 Get-AzAksArcClusterAdminKubeconfig -ClusterName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-FilePath <String>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-FilePath <String>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

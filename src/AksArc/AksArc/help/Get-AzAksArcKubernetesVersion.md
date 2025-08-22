@@ -14,8 +14,7 @@ Lists the supported kubernetes versions for the specified custom location
 
 ```
 Get-AzAksArcKubernetesVersion -CustomLocationName <String> [-ResourceGroupName <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

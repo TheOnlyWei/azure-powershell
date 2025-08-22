@@ -14,8 +14,7 @@ Lists the user credentials of the provisioned cluster (can only be used within p
 
 ```
 Get-AzAksArcClusterUserKubeconfig -ClusterName <String> -ResourceGroupName <String> [-SubscriptionId <String>]
- [-FilePath <String>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-FilePath <String>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
